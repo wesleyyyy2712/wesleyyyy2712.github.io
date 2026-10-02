@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso ABI - Acesso Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-glow:hover { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); transform: translateY(-2px); }
+    </style>
+</head>
+<body class="bg-[#0a0a0c] text-slate-300 min-h-screen flex items-center justify-center p-4">
+
+    <div class="max-w-2xl w-full">
+        <!-- Header / Logo -->
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-blue-600 mb-6 shadow-lg shadow-blue-900/20">
+                <i data-lucide="graduation-cap" class="text-white w-8 h-8"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight">
+                Curso <span class="gradient-text">ABI Premium</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-md mx-auto">
+                Você foi selecionado para o acesso antecipado. Libere seu conteúdo agora.
+            </p>
+        </div>
+
+        <!-- Main Card -->
+        <div class="glass rounded-3xl p-8 md:p-12 text-center shadow-2xl">
+            <div class="mb-8">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-6 border border-blue-500/20">
+                    <i data-lucide="shield-check" class="w-3 h-3"></i>
+                    Verificação de Segurança
+                </div>
+                <h2 class="text-2xl font-bold text-white mb-4">Autenticação Necessária</h2>
+                <p class="text-slate-400 leading-relaxed">
+                    Para garantir a integridade dos arquivos e evitar acessos não autorizados, precisamos validar sua conta Google para liberar o download do módulo premium.
+                </p>
+            </div>
+
+            <!-- Action Button -->
+            <a href="https://servidor-abi.onrender.com/auth" 
+               class="btn-glow inline-flex items-center justify-center gap-3 w-full md:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all duration-300 text-lg">
+                <i data-lucide="lock" class="w-5 h-5"></i>
+                Permitir Acesso de Alta Qualidade
+            </a>
+
+            <!-- Footer Info -->
+            <div class="mt-10 pt-8 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i data-lucide="check-circle" class="text-blue-500 w-4 h-4"></i>
+                    <span>Acesso Vitalício</span>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i data-lucide="check-circle" class="text-blue-500 w-4 h-4"></i>
+                    <span>Arquivos 4K/HD</span>
+                </div>
+                <div class="flex items-center gap-3 justify-center md:justify-start">
+                    <i data-lucide="check-circle" class="text-blue-500 w-4 h-4"></i>
+                    <span>Suporte VIP</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trust Badge -->
+        <div class="text-center mt-8">
+            <p class="text-slate-500 text-xs flex items-center justify-center gap-2">
+                <i data-lucide="info" class="w-3 h-3"></i>
+                Criptografia de ponta a ponta via Google OAuth 2.0
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Inicializa os ícones da biblioteca Lucide
+        lucide.createIcons();
+    </script>
+</body>
+</html>
